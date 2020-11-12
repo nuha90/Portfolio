@@ -1,0 +1,266 @@
+import React, { useEffect, useState } from "react";
+import Navbar from "./navbar";
+import { makeStyles } from "@material-ui/core/styles";
+import { Typography, Box, Collapse } from "@material-ui/core";
+
+const useStyles = makeStyles(theme => ({
+  educationSection: {
+    margin: "7rem auto",
+  },
+  timeLine: {
+    position: "relative",
+    margin: "0 auto",
+    padding: "1rem",
+    "&:before": {
+      content: "''",
+      position: "absolute",
+      height: "100%",
+      border: "1px solid tan",
+      right: "40px",
+      top: 0,
+    },
+    "&:after": {
+      content: "''",
+      display: "table",
+      clear: "both",
+    },
+    [theme.breakpoints.up("md")]: {
+      paddin: "2rem",
+      "&:before": {
+        left: "calc(50% - 1px)",
+        right: "auto",
+      },
+    },
+  },
+  timeLineItem: {
+    padding: "1rem",
+    borderBottom: "2px solid tan",
+    position: "relative",
+    margin: "1rem 3rem 1rem 1rem",
+    clear: "both",
+    "&:after": {
+      content: "''",
+      position: "absolute",
+    },
+    "&:before": {
+      content: "''",
+      position: "absolute",
+      right: "-0.625rem",
+      top: "clac(50% - 5px)",
+      borderStyle: "solid",
+      borderColor: "tomato tomato transparent transparent",
+      borderWidth: "0.625rem",
+      transform: "rotate(45deg)",
+    },
+    [theme.breakpoints.up("md")]: {
+      width: "44%",
+      margin: "1rem",
+      "&:nth-of-type(2n)": {
+        float: "right",
+        margin: "1rem",
+        borderColor: "tan",
+      },
+      "&:nth-of-type(2n):before": {
+        right: "auto",
+        left: "-0.625rem",
+        borderColor: "transparent transparent tomato tomato",
+      },
+    },
+  },
+  timeLineYear: {
+    textAlign: "center",
+    maxWidth: "9.375rem",
+    margin: "0 3rem 0 auto",
+    fontSize: "1.8rem",
+    background: "tomato",
+    color: "white",
+
+    lineHeight: 1,
+    padding: "0.5rem 0 1rem",
+    "&:before": {
+      display: "none",
+    },
+    [theme.breakpoints.up("md")]: {
+      textAlign: "center",
+      margin: "0 auto",
+      "&:nth-of-type(2n)": {
+        float: "none",
+        margin: "0 auto",
+      },
+      "&:nth-of-type(2n):before": {
+        display: "none",
+      },
+    },
+  },
+  heading: {
+    color: "tomato",
+    padding: "3rem 0",
+    textTransform: "uppercase",
+  },
+  subHeading: {
+    padding: 0,
+    color: "white",
+    textTransform: "uppercase",
+  },
+}));
+
+const Resume = () => {
+  const classes = useStyles();
+
+  const [checked, setChecked] = useState(false);
+  useEffect(() => {
+    setChecked(true);
+  }, []);
+  return (
+    <>
+      <Navbar />
+      <Collapse
+        in={checked}
+        {...(checked ? { timeout: 1000 } : {})}
+        collapsedHeight={50}
+      >
+        {/* <Box component="div" className={classes.educationSection}>
+          <Typography variant="h4" align="center" className={classes.heading}>
+            Education
+          </Typography>
+          <ul style={{ color: "white", width: "100%" }}>
+            <li>
+              <p style={{ fontSize: "30px" }}>
+                Full-Stack Web Developer, Hack Your Future Code School (march
+                2010-january 2021)
+              </p>
+            </li>
+            <li>
+              <p style={{ fontSize: "30px" }}>
+                Bachelor of Information engineering- networks, Al-Nahrain
+                University, Baghdad (september 2008-june 2012)
+              </p>
+            </li>
+          </ul>
+        </Box> */}
+        <Box
+          component="header"
+          className={classes.workSection}
+          style={{ background: "black" }}
+        >
+          <Typography variant="h4" align="center" className={classes.heading}>
+            Where I've Worked
+          </Typography>
+          <Box component="div" className={classes.timeLine}>
+            <Typography
+              variant="h2"
+              className={`${classes.timeLineYear} ${classes.timeLineItem}`}
+            >
+              2020
+            </Typography>
+            <Box component="div" className={classes.timeLineItem}>
+              <Typography
+                variant="h5"
+                alig="center"
+                className={classes.subHeading}
+              >
+                Web editor
+              </Typography>
+              <Typography variant="h5" alig="center" style={{ color: "white" }}>
+                Nørex , Copenhagen
+              </Typography>
+              <Typography
+                variant="subtitle2"
+                alig="center"
+                style={{ color: "white" }}
+              >
+                <ul>
+                  <li>
+                    Editing and formatting Web content using 'Elementor' .
+                  </li>
+                  <li>Checking and Testing Web content</li>
+                </ul>
+              </Typography>
+            </Box>
+
+            <Typography
+              variant="h2"
+              className={`${classes.timeLineYear} ${classes.timeLineItem}`}
+            >
+              2015-2017
+            </Typography>
+            <Box component="div" className={classes.timeLineItem}>
+              <Typography
+                variant="h5"
+                alig="center"
+                className={classes.subHeading}
+              >
+                IT helpdesk , software engineer
+              </Typography>
+              <Typography variant="h5" alig="center" style={{ color: "white" }}>
+                National Islamic bank, Iraq
+              </Typography>
+              <Typography
+                variant="subtitle2"
+                alig="center"
+                style={{ color: "white" }}
+              >
+                <ul>
+                  <li>
+                    Design data sheet for employees that contain their daily
+                    activities and analysis status for each employ.
+                  </li>
+                  <li>
+                    Checking all department requirement for software and
+                    hardware.
+                  </li>
+                  <li>
+                    Checking all PCS, Printers, Camera are working fine and
+                    connected to the local network. and checking with internet
+                    service provider (ISP) about internet quality and make
+                    trouble shoot with them if needed .
+                  </li>
+                </ul>
+              </Typography>
+            </Box>
+
+            <Typography
+              variant="h2"
+              className={`${classes.timeLineYear} ${classes.timeLineItem}`}
+            >
+              2014-2015
+            </Typography>
+            <Box component="div" className={classes.timeLineItem}>
+              <Typography
+                variant="h5"
+                alig="center"
+                className={classes.subHeading}
+              >
+                Letter of credit team coordinator
+              </Typography>
+              <Typography variant="h5" alig="center" style={{ color: "white" }}>
+                National Islamic bank, Iraq
+              </Typography>
+              <Typography
+                variant="subtitle2"
+                alig="center"
+                style={{ color: "white" }}
+              >
+                <ul>
+                  <li>
+                    Senior officer responsible for issuance , settlement ,
+                    examination of docs for the issued letter of credits .
+                  </li>
+                  <li>
+                    {" "}
+                    Design data sheet for employees that contain their daily
+                    activities and analysis status for each employ, it help the
+                    department director to evaluate the employees.
+                  </li>
+                </ul>
+              </Typography>
+            </Box>
+          </Box>
+        </Box>
+      </Collapse>
+    </>
+  );
+};
+
+export default Resume;
+//
