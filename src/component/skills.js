@@ -1,6 +1,7 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import { Typography, Box, Grid } from "@material-ui/core";
+import myImage from "../images/nuha.jpg";
 
 const useStyles = makeStyles({
   mainContainer: {
@@ -81,11 +82,7 @@ const Skills = () => {
           </Grid>
           <Grid item xs={12} sm={8} md={6}>
             <div className="imgStyling">
-              <img
-                width="100%"
-                src=" https://image.shutterstock.com/image-photo/white-transparent-leaf-on-mirror-260nw-1029171697.jpg"
-                alt="nuha najah"
-              />
+              <img width="90%" src={myImage} alt="nuha najah" />
             </div>
           </Grid>
         </Grid>

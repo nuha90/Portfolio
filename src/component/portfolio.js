@@ -19,7 +19,7 @@ import quote from "../images/quote-generator.png";
 const useStyles = makeStyles({
   mainContainer: {
     height: "100%",
-    marginTop: "10rem",
+    marginTop: "6rem",
   },
   header: {
     color: "tomato",
