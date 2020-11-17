@@ -119,25 +119,6 @@ const Resume = () => {
         {...(checked ? { timeout: 1000 } : {})}
         collapsedHeight={50}
       >
-        {/* <Box component="div" className={classes.educationSection}>
-          <Typography variant="h4" align="center" className={classes.heading}>
-            Education
-          </Typography>
-          <ul style={{ color: "white", width: "100%" }}>
-            <li>
-              <p style={{ fontSize: "30px" }}>
-                Full-Stack Web Developer, Hack Your Future Code School (march
-                2010-january 2021)
-              </p>
-            </li>
-            <li>
-              <p style={{ fontSize: "30px" }}>
-                Bachelor of Information engineering- networks, Al-Nahrain
-                University, Baghdad (september 2008-june 2012)
-              </p>
-            </li>
-          </ul>
-        </Box> */}
         <Box
           component="header"
           className={classes.workSection}
@@ -147,6 +128,24 @@ const Resume = () => {
             Where I've Worked
           </Typography>
           <Box component="div" className={classes.timeLine}>
+            <Typography
+              variant="h2"
+              className={`${classes.timeLineYear} ${classes.timeLineItem}`}
+            >
+              2020-2021
+            </Typography>
+            <Box component="div" className={classes.timeLineItem}>
+              <Typography
+                variant="h5"
+                alig="center"
+                className={classes.subHeading}
+              >
+                Full-Stack Web Developer
+              </Typography>
+              <Typography variant="h5" alig="center" style={{ color: "white" }}>
+                Hack Your Future Code School , Copenhagen
+              </Typography>
+            </Box>
             <Typography
               variant="h2"
               className={`${classes.timeLineYear} ${classes.timeLineItem}`}
@@ -253,6 +252,25 @@ const Resume = () => {
                     department director to evaluate the employees.
                   </li>
                 </ul>
+              </Typography>
+            </Box>
+
+            <Typography
+              variant="h2"
+              className={`${classes.timeLineYear} ${classes.timeLineItem}`}
+            >
+              2008-2012
+            </Typography>
+            <Box component="div" className={classes.timeLineItem}>
+              <Typography
+                variant="h5"
+                alig="center"
+                className={classes.subHeading}
+              >
+                Bachelor of Information engineering- networks
+              </Typography>
+              <Typography variant="h5" alig="center" style={{ color: "white" }}>
+                Al-Nahrain University, Iraq
               </Typography>
             </Box>
           </Box>

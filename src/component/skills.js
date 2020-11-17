@@ -21,60 +21,78 @@ const Skills = () => {
             <Typography variant="h3" style={{ color: "tomato" }}>
               About Me
             </Typography>
-            <Typography variant="body1" style={{ color: "tan", width: "100%" }}>
+            <Typography
+              variant="body1"
+              style={{
+                color: "tan",
+                width: "100%",
+                fontSize: "20px",
+                marginTop: "10px",
+              }}
+            >
               Hello! I'm Nouha , IT Engineer and Full Stack Developer based in
               copenhagen who enjoys building things. I studied the basics of
               programming languages at the University and I developed these
               skills through an advanced course in Hack Your Future code school.
             </Typography>
-            <Typography variant="body1" style={{ color: "tan", width: "100%" }}>
+            <Typography
+              variant="body1"
+              style={{ color: "tan", width: "100%", fontSize: "20px" }}
+            >
               Few technologies I've been working with recently :{" "}
             </Typography>
-            <ul>
+            <ul style={{ fontSize: "20px", marginTop: "10px" }}>
               <li>
-                JavaScript
+                <span style={{ marginRight: "10px" }}> JavaScript</span>
                 <img
                   alt="JavaScript"
-                  width="20px"
+                  width="25px"
                   src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png"
                 />
               </li>
               <li>
-                React
+                <span style={{ marginRight: "10px" }}> React</span>
                 <img
                   alt="React"
-                  width="20px"
+                  width="25px"
                   src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/react/react.png"
                 />
               </li>
               <li>
-                Node.js{" "}
+                <span style={{ marginRight: "10px" }}> Node.js</span>
                 <img
                   alt="Node.js"
-                  width="20px"
+                  width="25px"
                   src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/nodejs/nodejs.png"
                 />
               </li>
               <li>
-                HTML{" "}
+                <span style={{ marginRight: "10px" }}> HTML</span>
                 <img
                   alt="HTML5"
-                  width="20px"
+                  width="25px"
                   src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/html/html.png"
                 />{" "}
-                & CSS
+                & <span style={{ marginRight: "10px" }}>CSS</span>
                 <img
                   alt="CSS3"
-                  width="20px"
+                  width="25px"
                   src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/css/css.png"
                 />
               </li>
-              <li> Express</li>
               <li>
-                MySQL
+                <span style={{ marginRight: "10px" }}> Express</span>
+                <img
+                  alt="express"
+                  width="25px"
+                  src="https://c0.klipartz.com/pngpicture/925/447/gratis-png-express-js-node-js-javascript-mongodb-node-js.png"
+                />
+              </li>
+              <li>
+                <span style={{ marginRight: "10px" }}> MySQL</span>
                 <img
                   alt="MySQL"
-                  width="20px"
+                  width="25px"
                   src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/mysql/mysql.png"
                 />
               </li>
