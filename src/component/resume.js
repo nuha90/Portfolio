@@ -125,7 +125,7 @@ const Resume = () => {
           style={{ background: "black" }}
         >
           <Typography variant="h4" align="center" className={classes.heading}>
-            Where I've Worked
+            Where I've Studied and Worked
           </Typography>
           <Box component="div" className={classes.timeLine}>
             <Typography
@@ -135,15 +135,11 @@ const Resume = () => {
               2020-2021
             </Typography>
             <Box component="div" className={classes.timeLineItem}>
-              <Typography
-                variant="h5"
-                alig="center"
-                className={classes.subHeading}
-              >
+              <Typography variant="h5" className={classes.subHeading}>
                 Full-Stack Web Developer
               </Typography>
-              <Typography variant="h5" alig="center" style={{ color: "white" }}>
-                Hack Your Future Code School , Copenhagen
+              <Typography variant="h6" style={{ color: "white" }}>
+                HackYourFuture WebDevelopment School, Copenhagen
               </Typography>
             </Box>
             <Typography
@@ -153,21 +149,13 @@ const Resume = () => {
               2020
             </Typography>
             <Box component="div" className={classes.timeLineItem}>
-              <Typography
-                variant="h5"
-                alig="center"
-                className={classes.subHeading}
-              >
+              <Typography variant="h5" className={classes.subHeading}>
                 Web editor
               </Typography>
-              <Typography variant="h5" alig="center" style={{ color: "white" }}>
-                Nørex , Copenhagen
+              <Typography variant="h6" style={{ color: "white" }}>
+                Nørex, Copenhagen
               </Typography>
-              <Typography
-                variant="subtitle2"
-                alig="center"
-                style={{ color: "white" }}
-              >
+              <Typography variant="subtitle2" style={{ color: "white" }}>
                 <ul>
                   <li>
                     Editing and formatting Web content using 'Elementor' .
@@ -184,21 +172,13 @@ const Resume = () => {
               2015-2017
             </Typography>
             <Box component="div" className={classes.timeLineItem}>
-              <Typography
-                variant="h5"
-                alig="center"
-                className={classes.subHeading}
-              >
-                IT helpdesk , software engineer
+              <Typography variant="h5" className={classes.subHeading}>
+                IT helpdesk, software engineer
               </Typography>
-              <Typography variant="h5" alig="center" style={{ color: "white" }}>
+              <Typography variant="h6" style={{ color: "white" }}>
                 National Islamic bank, Iraq
               </Typography>
-              <Typography
-                variant="subtitle2"
-                alig="center"
-                style={{ color: "white" }}
-              >
+              <Typography variant="subtitle2" style={{ color: "white" }}>
                 <ul>
                   <li>
                     Design data sheet for employees that contain their daily
@@ -225,21 +205,13 @@ const Resume = () => {
               2014-2015
             </Typography>
             <Box component="div" className={classes.timeLineItem}>
-              <Typography
-                variant="h5"
-                alig="center"
-                className={classes.subHeading}
-              >
+              <Typography variant="h5" className={classes.subHeading}>
                 Letter of credit team coordinator
               </Typography>
-              <Typography variant="h5" alig="center" style={{ color: "white" }}>
+              <Typography variant="h6" style={{ color: "white" }}>
                 National Islamic bank, Iraq
               </Typography>
-              <Typography
-                variant="subtitle2"
-                alig="center"
-                style={{ color: "white" }}
-              >
+              <Typography variant="subtitle2" style={{ color: "white" }}>
                 <ul>
                   <li>
                     Senior officer responsible for issuance , settlement ,
@@ -262,14 +234,10 @@ const Resume = () => {
               2008-2012
             </Typography>
             <Box component="div" className={classes.timeLineItem}>
-              <Typography
-                variant="h5"
-                alig="center"
-                className={classes.subHeading}
-              >
+              <Typography variant="h5" className={classes.subHeading}>
                 Bachelor of Information engineering- networks
               </Typography>
-              <Typography variant="h5" alig="center" style={{ color: "white" }}>
+              <Typography variant="h6" style={{ color: "white" }}>
                 Al-Nahrain University, Iraq
               </Typography>
             </Box>
@@ -281,4 +249,3 @@ const Resume = () => {
 };
 
 export default Resume;
-//
