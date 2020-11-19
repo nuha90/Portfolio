@@ -2,11 +2,13 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import { Typography, Box, Grid } from "@material-ui/core";
 import myImage from "../images/nuha.jpg";
+import materialUi from "../images/material-ui.png";
 
 const useStyles = makeStyles({
   mainContainer: {
     color: "tan",
-    margin: "5rem",
+    marginLeft: "3rem",
+    marginTop: "5rem",
   },
 });
 
@@ -28,20 +30,21 @@ const Skills = () => {
                 width: "100%",
                 fontSize: "20px",
                 marginTop: "10px",
+                marginRight: "5px",
               }}
             >
-              Hello! I'm Nouha , IT Engineer and Full Stack Developer based in
-              copenhagen who enjoys building things. I studied the basics of
-              programming languages at the University and I developed these
-              skills through an advanced course in Hack Your Future code school.
+              Hello! I'm Nouha, IT Engineer and Full Stack Developer based in
+              Copenhagen who enjoys building things. I studied the basics of
+              Programming at University and continued developing those skills
+              through an advanced course at HackYourFuture code school.
             </Typography>
             <Typography
               variant="body1"
               style={{ color: "tan", width: "100%", fontSize: "20px" }}
             >
-              Few technologies I've been working with recently :{" "}
+              A few technologies I've been working with recently :{" "}
             </Typography>
-            <ul style={{ fontSize: "20px", marginTop: "10px" }}>
+            <ul style={{ fontSize: "20px", marginTop: "30px" }}>
               <li>
                 <span style={{ marginRight: "10px" }}> JavaScript</span>
                 <img
@@ -65,6 +68,10 @@ const Skills = () => {
                   width="25px"
                   src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/nodejs/nodejs.png"
                 />
+              </li>
+              <li>
+                <span style={{ marginRight: "10px" }}> Material-UI</span>
+                <img alt="Material-UI" width="25px" src={materialUi} />
               </li>
               <li>
                 <span style={{ marginRight: "10px" }}> HTML</span>
