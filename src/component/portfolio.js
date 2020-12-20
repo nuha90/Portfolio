@@ -13,6 +13,7 @@ import {
 import GitHubIcon from "@material-ui/icons/GitHub";
 import mealSharing from "../images/meal-sharing.png";
 import userSearch from "../images/github-search.png";
+import game from "../images/tradition-game.png";
 import todo from "../images/todo-list.png";
 import quote from "../images/quote-generator.png";
 
@@ -80,6 +81,48 @@ const Portfolio = () => {
                 <a
                   href="
                   https://our-meal-sharing.herokuapp.com/"
+                  target="_blank"
+                >
+                  live Demo
+                </a>
+              </button>
+            </CardActions>
+          </Card>
+        </Grid>
+
+        <Grid item xs={12} sm={8} md={6}>
+          <Card className={classes.cardContainer}>
+            <CardActionArea>
+              <CardMedia
+                component="img"
+                alt="project 2"
+                height="140"
+                image={game}
+              />
+              <CardContent>
+                <Typography gutterBottom variant="h5">
+                  Tradition game
+                </Typography>
+                <Typography variant="body2" colot="textSecondary" component="p">
+                  Quiz game to test your knowledge of traditions in some
+                  countries. I made this game with a team of 3 people as a
+                  challenge By HackYourFuture, we won first place
+                </Typography>
+              </CardContent>
+            </CardActionArea>
+            <CardActions>
+              <a
+                href="https://github.com/nuha90/Tradition-game"
+                style={{ color: "black", marginLeft: "30%" }}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <GitHubIcon />
+              </a>
+              <button color="primary" className={classes.button}>
+                <a
+                  href="
+                  https://tradition-game.netlify.app/"
                   target="_blank"
                 >
                   live Demo
