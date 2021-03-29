@@ -16,6 +16,7 @@ import userSearch from "../images/github-search.png";
 import game from "../images/tradition-game.png";
 import todo from "../images/todo-list.png";
 import quote from "../images/quote-generator.png";
+import finalProject from "../images/final-project.png";
 
 const useStyles = makeStyles({
   mainContainer: {
@@ -55,6 +56,51 @@ const Portfolio = () => {
               <CardMedia
                 component="img"
                 alt="project 1"
+                height="140"
+                image={finalProject}
+              />
+              <CardContent>
+                <Typography gutterBottom variant="h5">
+                  Web Dev Rooms
+                </Typography>
+                <Typography variant="body2" colot="textSecondary" component="p">
+                  The project is my final project with my colleagues consists of
+                  creating an App that facilitates the Study Group Management.
+                  There are 2 companies supporting HackYourFuture where there
+                  employees volunteers work hours on 2 different days and on 4
+                  different time slots. We also run an Open Office once a week
+                  where students can meet.
+                </Typography>
+              </CardContent>
+            </CardActionArea>
+            <CardActions>
+              <a
+                href="https://github.com/nuha90/web-dev-rooms"
+                style={{ color: "black", marginLeft: "30%" }}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <GitHubIcon />
+              </a>
+              <button color="primary" className={classes.button}>
+                <a
+                  href="
+                  http://web-dev-rooms.herokuapp.com/login"
+                  target="_blank"
+                >
+                  live Demo
+                </a>
+              </button>
+            </CardActions>
+          </Card>
+        </Grid>
+
+        <Grid item xs={12} sm={8} md={6}>
+          <Card className={classes.cardContainer}>
+            <CardActionArea>
+              <CardMedia
+                component="img"
+                alt="project 2"
                 height="140"
                 image={mealSharing}
               />

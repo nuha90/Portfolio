@@ -132,6 +132,20 @@ const Resume = () => {
               variant="h2"
               className={`${classes.timeLineYear} ${classes.timeLineItem}`}
             >
+              2021
+            </Typography>
+            <Box component="div" className={classes.timeLineItem}>
+              <Typography variant="h5" className={classes.subHeading}>
+                Frontend Developer
+              </Typography>
+              <Typography variant="h6" style={{ color: "white" }}>
+                Monta, Copenhagen
+              </Typography>
+            </Box>
+            <Typography
+              variant="h2"
+              className={`${classes.timeLineYear} ${classes.timeLineItem}`}
+            >
               2020-2021
             </Typography>
             <Box component="div" className={classes.timeLineItem}>

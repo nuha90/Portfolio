@@ -30,7 +30,7 @@ const Contact = () => {
 
         <Typography variant="h5" style={{ marginTop: "1rem" }}>
           {" "}
-          <HomeIcon /> Paltholmterrasserne 16F, Farum
+          <HomeIcon /> Roskildevej 141, valby
         </Typography>
         <Typography variant="h5" style={{ marginTop: "1rem" }}>
           <SmartphoneIcon /> +45 50 12 72 82
