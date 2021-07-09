@@ -28,7 +28,7 @@ const useStyles = makeStyles(theme => ({
   typedContanier: {
     top: "80%",
     left: "50%",
-    height: "100%",
+    margin: "1rem auto",
     width: "100%",
     textAlign: "center",
   },
@@ -41,10 +41,10 @@ const Header = () => {
     setChecked(true);
   }, []);
   return (
-    <div id="header">
+    <div>
       <Collapse
         in={checked}
-        {...(checked ? { timeout: 1000 } : {})}
+        {...(checked ? { timeout: 2000 } : {})}
         collapsedHeight={50}
       >
         <Box className={classes.typedContanier}>

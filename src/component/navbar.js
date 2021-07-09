@@ -1,18 +1,14 @@
 import React from "react";
 import { fade, makeStyles } from "@material-ui/core/styles";
 import { Link } from "react-router-dom";
+
 import { AppBar, Toolbar, IconButton, Typography } from "@material-ui/core";
-import { AssignmentInd, Home } from "@material-ui/icons";
+import { AssignmentInd, Home, Face, Chat, NextWeek } from "@material-ui/icons";
 import MenuItem from "@material-ui/core/MenuItem";
 import Menu from "@material-ui/core/Menu";
 import MoreIcon from "@material-ui/icons/MoreVert";
 
 const useStyles = makeStyles(theme => ({
-  menuSliderContainer: {
-    width: 200,
-    background: "rgb(170, 170, 27)",
-    height: "100%",
-  },
   grow: {
     flexGrow: 1,
   },
@@ -77,6 +73,7 @@ const useStyles = makeStyles(theme => ({
 
 const Navbar = () => {
   const classes = useStyles();
+
   const [anchorEl, setAnchorEl] = React.useState(null);
   const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = React.useState(null);
 
@@ -123,11 +120,18 @@ const Navbar = () => {
       open={isMobileMenuOpen}
       onClose={handleMobileMenuClose}
     >
-      <MenuItem component={Link} to="/">
+      <MenuItem component={Link} to="/about-me">
         <IconButton color="inherit">
-          <Home />
+          <Face />
         </IconButton>
-        <p>Home</p>
+        <p>About me</p>
+      </MenuItem>
+
+      <MenuItem component={Link} to="/projects">
+        <IconButton color="inherit">
+          <NextWeek />
+        </IconButton>
+        <p>Projects</p>
       </MenuItem>
 
       <MenuItem component={Link} to="/resume">
@@ -136,6 +140,13 @@ const Navbar = () => {
         </IconButton>
         <p>Resume</p>
       </MenuItem>
+
+      <MenuItem component={Link} to="/contact">
+        <IconButton color="inherit">
+          <Chat />
+        </IconButton>
+        <p>Contact</p>
+      </MenuItem>
     </Menu>
   );
   return (
@@ -143,24 +154,37 @@ const Navbar = () => {
       <div className={classes.grow}>
         <AppBar position="static" style={{ background: "black" }}>
           <Toolbar>
-            <Typography
-              className={classes.title}
-              variant="h6"
-              noWrap
-              style={{ marginRight: "5px" }}
-            >
-              PORTFOLIO
-            </Typography>
+            <IconButton color="inherit" component={Link} to="/">
+              <Home />
+              <Typography
+                className={classes.title}
+                variant="h6"
+                noWrap
+                style={{ marginRight: "5px" }}
+              >
+                Home
+              </Typography>
+            </IconButton>
+
             <div className={classes.grow} />
             <div className={classes.sectionDesktop}>
-              <IconButton color="inherit" component={Link} to="/">
-                <Home />
-                <Typography variant="body1">Home</Typography>
+              <IconButton color="inherit" component={Link} to="/about-me">
+                <Face /> <Typography variant="body1">About me</Typography>
+              </IconButton>
+
+              <IconButton color="inherit" component={Link} to="/projects">
+                <NextWeek />
+                <Typography variant="body1">Projects</Typography>
               </IconButton>
 
               <IconButton color="inherit" component={Link} to="/resume">
                 <AssignmentInd />
                 <Typography variant="body1">Resume</Typography>
+              </IconButton>
+
+              <IconButton color="inherit" component={Link} to="/contact">
+                <Chat />
+                <Typography variant="body1">Contact</Typography>
               </IconButton>
             </div>
 

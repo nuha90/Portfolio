@@ -3,6 +3,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import { Typography, Box, Grid } from "@material-ui/core";
 import myImage from "../images/nuha.jpg";
 import materialUi from "../images/material-ui.png";
+import Navbar from "./Navbar";
 
 const useStyles = makeStyles({
   mainContainer: {
@@ -17,6 +18,7 @@ const Skills = () => {
 
   return (
     <>
+      <Navbar />
       <Box component="div" className={classes.mainContainer}>
         <Grid container>
           <Grid item xs={12} sm={8} md={6}>
