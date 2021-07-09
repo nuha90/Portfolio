@@ -1,15 +1,15 @@
-import "./App.css";
-import Home from "./component/Home";
-import Resume from "./component/Resume";
-import Contact from "./component/Contact";
-import Skills from "./component/Skills";
-import Projects from "./component/portfolio";
-import CssBaseline from "@material-ui/core/CssBaseline";
-import { Route } from "react-router-dom";
+import './App.css';
+import Home from './component/Home';
+import Resume from './component/resume';
+import Contact from './component/contact';
+import Skills from './component/skills';
+import Projects from './component/portfolio';
+import CssBaseline from '@material-ui/core/CssBaseline';
+import { Route } from 'react-router-dom';
 
 function App() {
   return (
-    <div className="App" style={{ background: "black", paddingBottom: "6rem" }}>
+    <div className="App" style={{ background: 'black', paddingBottom: '6rem' }}>
       <CssBaseline />
       <Route path="/" exact component={Home} />
       <Route path="/resume" component={Resume} />

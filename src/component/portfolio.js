@@ -8,7 +8,7 @@ import game from '../images/tradition-game.png';
 import todo from '../images/todo-list.png';
 import quote from '../images/quote-generator.png';
 import finalProject from '../images/final-project.png';
-import Navbar from './Navbar';
+import Navbar from './navbar';
 
 const useStyles = makeStyles({
   mainContainer: {
